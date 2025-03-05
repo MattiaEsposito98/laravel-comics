@@ -16,3 +16,41 @@ Route::get('/pagina2', function () {
 
     return view('pagina2', compact('data', 'persona1'));
 })->name('pagina2');
+
+// Rotte per i link
+Route::get('/characters', function () {
+    return 'CHARACTERS';
+})->name('characters');
+
+
+Route::get('/movies', function () {
+    return 'MOVIES';
+})->name('movies');
+
+Route::get('/tv', function () {
+    return 'TV';
+})->name('tv');
+
+Route::get('/games', function () {
+    return 'GAMES';
+})->name('games');
+
+Route::get('/collectibles', function () {
+    return 'COLLECTIBLES';
+})->name('collectibles');
+
+Route::get('/videos', function () {
+    return 'VIDEOS';
+})->name('videos');
+
+Route::get('/fans', function () {
+    return 'FANS';
+})->name('fans');
+
+Route::get('/news', function () {
+    return 'NEWS';
+})->name('news');
+
+Route::get('/shop', function () {
+    return 'SHOP';
+})->name('shop');

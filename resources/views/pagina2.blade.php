@@ -9,10 +9,12 @@
             @for ($i = 0; $i < count($data); $i++)
                 <li> {{ $data[$i] }} </li>
             @endfor
-
+        </ul>
+        <ul>
             @foreach ($persona1 as $key => $value)
-                <li> Proprietà: {{ $key }} <br>
+                <ol> Proprietà: {{ $key }} <br>
                     Valore: {{ $value }}
-                </li>
-            @endforeach
-        @endsection
+                </ol>
+        </ul>
+        @endforeach
+    @endsection
