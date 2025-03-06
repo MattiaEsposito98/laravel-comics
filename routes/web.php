@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('/layouts/master');
+    $comics = config('comics');
+    return view('./partials.jumbotron', compact('comics'));
 });
 
 Route::get('/pagina2', function () {
@@ -14,7 +15,7 @@ Route::get('/pagina2', function () {
         'eta' => 27,
     ];
 
-    return view('pagina2', compact('data', 'persona1'));
+    return view('./partials.pagina2', compact('data', 'persona1'));
 })->name('pagina2');
 
 // Rotte per i link

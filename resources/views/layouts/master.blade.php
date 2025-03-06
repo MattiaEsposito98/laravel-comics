@@ -32,7 +32,6 @@
 
     <main>
         @yield('content')
-        @include('partials.jumbotron')
     </main>
 
     <footer>
