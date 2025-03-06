@@ -13,7 +13,7 @@
             @if (isset($comics) && count($comics) > 0)
                 @foreach ($comics as $comic)
                     <div class="col-2 mb-3 mt-5">
-                        <x-comic-card :comic="$comic" />
+                        <x-comic_card :comic="$comic" />
                     </div>
                 @endforeach
             @else
